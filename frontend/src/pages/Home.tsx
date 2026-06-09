@@ -27,7 +27,11 @@ export default function Home() {
       {/* Header / Logo */}
       <div className="w-full max-w-5xl flex justify-between items-center z-10 py-5 border-b border-white/10">
         <div className="flex items-center gap-3 cursor-pointer">
-          <div className="w-10 h-10 rounded-xl bg-brand-500 flex items-center justify-center font-black text-white text-xl shadow-glow">I</div>
+          <img
+              src="/logo.png"
+              alt="IndiaGuessr"
+              className="w-10 h-10 rounded-xl object-cover shadow-glow"
+          />
           <span className="text-xl font-extrabold tracking-tight text-white">
             India<span className="text-brand-500 font-bold">Guessr</span>
           </span>
