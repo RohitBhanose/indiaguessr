@@ -28,7 +28,7 @@ export default function Home() {
       <div className="w-full max-w-5xl flex justify-between items-center z-10 py-5 border-b border-white/10">
         <div className="flex items-center gap-3 cursor-pointer">
           <img
-              src="/logo.png"
+              src="/Gemini_Generated_Image_bn4hqobn4hqobn4h - Edited.png"
               alt="IndiaGuessr"
               className="w-10 h-10 rounded-xl object-cover shadow-glow"
           />
