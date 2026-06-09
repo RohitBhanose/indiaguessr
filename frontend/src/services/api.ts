@@ -25,7 +25,7 @@ export const api = {
    * Submit the guessed coordinates for the active round
    */
   async submitGuess(gameId: string, latitude: number, longitude: number): Promise<GuessResponse> {
-    const res = await fetch(`${API_BASE_URL}/games/${gameId}/guess`, {
+    const res = await fetch(`${API_BASE_URL}/api/v1/games/${gameId}/guess`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ export const api = {
    * Advance to the next round in the session
    */
   async nextRound(gameId: string): Promise<GameSession> {
-    const res = await fetch(`${API_BASE_URL}/games/${gameId}/next`, {
+    const res = await fetch(`${API_BASE_URL}/api/v1/games/${gameId}/next`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ export const api = {
    * Retrieve final game breakdown and total score
    */
   async getResults(gameId: string): Promise<GameResults> {
-    const res = await fetch(`${API_BASE_URL}/games/${gameId}/results`);
+    const res = await fetch(`${API_BASE_URL}/api/v1/games/${gameId}/results`);
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
       throw new Error(err.detail || 'Failed to fetch game results');
@@ -72,7 +72,7 @@ export const api = {
    * Update the active round's actual coordinates when Street View is auto-replaced
    */
   async updateRoundLocation(gameId: string, latitude: number, longitude: number): Promise<GameSession> {
-    const res = await fetch(`${API_BASE_URL}/games/${gameId}/round/location`, {
+    const res = await fetch(`${API_BASE_URL}/api/v1/games/${gameId}/round/location`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
