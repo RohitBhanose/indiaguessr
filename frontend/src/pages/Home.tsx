@@ -43,7 +43,7 @@ export default function Home() {
         {/* Title Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 border border-brand-500/20 text-xs font-bold text-brand-400 mb-6 drop-shadow-glow">
           <Sparkles className="w-3.5 h-3.5" />
-          <span className="tracking-wider uppercase text-[10px]">Premium Geo-Guessing Simulator</span>
+          <span className="tracking-wider uppercase text-[10px]">🌍 TEST YOUR GEOGRAPHY INSTINCTS</span>
         </div>
 
         {/* Hero Headlines */}
