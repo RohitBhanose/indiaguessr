@@ -170,7 +170,11 @@ export default function Game() {
       <header className="h-20 border-b border-white/10 bg-bgDark-950/85 backdrop-blur-xl flex items-center justify-between px-6 z-20 shrink-0">
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2.5 cursor-pointer group" onClick={() => navigate('/')}>
-            <div className="w-9 h-9 rounded-xl bg-brand-500 flex items-center justify-center font-black text-white text-lg shadow-glow group-hover:scale-105 transition-all">I</div>
+            <img
+                src="/Gemini_Generated_Image_bn4hqobn4hqobn4h - Edited.png"
+                alt="IndiaGuessr"
+                className="w-10 h-10 rounded-xl"
+/>
             <span className="font-extrabold tracking-tight text-slate-100 text-lg md:text-xl transition-all group-hover:text-brand-400">
               India<span className="text-brand-500 font-bold">Guessr</span>
             </span>
