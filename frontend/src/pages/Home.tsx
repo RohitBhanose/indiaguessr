@@ -48,12 +48,15 @@ export default function Home() {
 
         {/* Hero Headlines */}
         <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white mb-6 leading-none">
-          Dropped into the <br />
+          Where In The World
+          Are You? <br />
           <span className="bg-gradient-to-r from-brand-400 via-brand-500 to-indigo-500 bg-clip-text text-transparent drop-shadow-glow">geographic unknown.</span>
         </h1>
         
         <p className="text-slate-400 text-sm md:text-base max-w-lg mb-12 font-light leading-relaxed">
-          Search for regional clues: examine highway markers, local flora, architecture, and languages. Make your guess on the map and challenge your spatial intuition.
+          Road signs. Architecture. Language.
+          Every clue matters.
+          How close can you get?
         </p>
 
         {/* Mode Selector */}
