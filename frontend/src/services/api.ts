@@ -7,7 +7,7 @@ export const api = {
    * Start a new game session
    */
   async startGame(mode: 'india' | 'world'): Promise<GameSession> {
-    const res = await fetch(`${API_BASE_URL}/games`, {
+    const res = await fetch(`${API_BASE_URL}/api/v1/games`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

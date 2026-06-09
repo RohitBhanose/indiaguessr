@@ -17,6 +17,7 @@ build/
 
 # Databases
 *.db
+!backend/indiaguessr.db
 *.sqlite
 *.sqlite3
 
